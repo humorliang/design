@@ -37,3 +37,18 @@
 - [Strategy(策略)](./Strategy/Readme.md)
 - [Template Method(模板方法)](./Template_Method/Readme.md)
 - [Visitor(访问者)](./Visitor/Readme.md)
+
+
+## 图型说明
+1. 类继承表示为一个从子类(图中LineShape) 到父类(图中的shape) 的三角形连线;
+![a](vx_images/vx20220515143133.png)
+2. 代表部分或者聚集关系的对象引用表示为一个根部有菱形的箭头，指向被聚集的类(图中的Shape);
+
+![b](vx_images/vx20220515143151.png)
+3. 根部没有菱形的箭头表示相识关系(图中LineShape有一个指向Color的引用，而Color可能是多个Shape对象共享的)
+![](vx_images/vx20220515143308.png)
+4. 哪个类创建哪个类对象我们用虚线箭头标记这种情况，箭头指向被实例化的对象
+5. 定义了一种实心圆点，表示多于一个。当圆点位于引用的头部，它表示指向或聚集多个对象，
+6. 还有一些伪代码
+![](vx_images/vx20220515143356.png)
+
